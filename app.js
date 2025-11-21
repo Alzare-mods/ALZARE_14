@@ -1,4 +1,4 @@
-// app.js - Advanced ALZARÉ frontend
+// app.js - Advanced ALZARE frontend
 let products = [];
 let cart = JSON.parse(localStorage.getItem('alzare_cart')||'[]');
 let productsLoadKey = 'alzare_products_data'; // local override set by admin
