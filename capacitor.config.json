@@ -1,0 +1,6 @@
+{
+  "appId": "com.alzare.app",
+  "appName": "ALZARE",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

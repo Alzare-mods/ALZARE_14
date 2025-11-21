@@ -1,0 +1,87 @@
+[
+  {
+    "id": 101,
+    "name": "Playera Premium",
+    "price": 350,
+    "category": "Hombre",
+    "images": [
+      "https://via.placeholder.com/800x800?text=Playera+1",
+      "https://via.placeholder.com/800x800?text=Playera+1+2",
+      "https://via.placeholder.com/800x800?text=Playera+1+3"
+    ],
+    "variants": [
+      {
+        "sku": "P101-BLK-S",
+        "size": "S",
+        "color": "Negro",
+        "price": 350,
+        "stock": 5
+      },
+      {
+        "sku": "P101-BLK-M",
+        "size": "M",
+        "color": "Negro",
+        "price": 350,
+        "stock": 8
+      },
+      {
+        "sku": "P101-WHT-S",
+        "size": "S",
+        "color": "Blanco",
+        "price": 360,
+        "stock": 2
+      }
+    ],
+    "description": "Playera premium 100% algodón.",
+    "tags": [
+      "nuevo",
+      "top"
+    ],
+    "sizes": [
+      "M",
+      "S"
+    ],
+    "colors": [
+      "Blanco",
+      "Negro"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Sudadera Urban",
+    "price": 580,
+    "category": "Mujer",
+    "images": [
+      "https://via.placeholder.com/800x800?text=Sudadera+1",
+      "https://via.placeholder.com/800x800?text=Sudadera+1+2"
+    ],
+    "variants": [
+      {
+        "sku": "S102-BLK-S",
+        "size": "S",
+        "color": "Negro",
+        "price": 580,
+        "stock": 3
+      },
+      {
+        "sku": "S102-RED-M",
+        "size": "M",
+        "color": "Rojo",
+        "price": 580,
+        "stock": 4
+      }
+    ],
+    "description": "Sudadera con capucha, corte moderno.",
+    "tags": [
+      "bestseller"
+    ],
+    "sizes": [
+      "M",
+      "S"
+    ],
+    "colors": [
+      "Negro",
+      "Rojo"
+    ]
+  }
+]

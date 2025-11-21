@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<script>
+const pass = prompt("Ingrese la contraseña para editar productos:");
+if(pass !== "ALZARE2025"){
+    alert("Acceso denegado");
+    window.location.href = "index.html";
+}
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALZARÉ — Admin</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="header"><div class="brand">ALZARÉ — Admin</div><nav><a href="index.html">Ver tienda</a></nav></header>
+<main class="admin-main">
+<section class="card">
+  <h2>Panel administrador</h2>
+  <form id="productForm">
+    <input type="hidden" id="productId">
+    <label>Nombre<input id="name" required></label>
+    <label>Precio<input id="price" type="number" step="0.01" required></label>
+    <label>Categoría<input id="category" placeholder="Hombre,Mujer,Unisex"></label>
+    <label>Tallas (coma) <input id="sizes" placeholder="S,M,L"></label>
+    <label>Colores (coma) <input id="colors" placeholder="Negro,Blanco"></label>
+    <label>Imágenes (varias) <input id="images" type="file" accept="image/*" multiple></label>
+    <div id="imgPreview" class="grid"></div>
+    <label>Variantes JSON (opcional) <textarea id="variants" placeholder='[{"sku":"P101-S-BLK","size":"S","color":"Negro","price":350,"stock":5}]'></textarea></label>
+    <div class="actions"><button type="button" id="saveProduct">Guardar</button> <button type="button" id="exportJSON">Exportar JSON</button></div>
+  </form>
+</section>
+<section class="card">
+  <h2>Productos actuales</h2>
+  <div id="productsList" class="grid"></div>
+  <div class="actions"><button id="restoreSample">Restaurar ejemplo</button></div>
+</section>
+<section class="card">
+  <h2>Integración opcional</h2>
+  <p>Puedes configurar Firebase (Storage + Firestore) para guardar productos en la nube. Añade tu configuración en <code>admin-config.json</code></p>
+  <p>Archivo que subiste con assets: <code>/mnt/data/alzare_catalog.zip</code></p>
+</section>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>

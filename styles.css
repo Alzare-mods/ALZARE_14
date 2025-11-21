@@ -1,0 +1,30 @@
+:root{--bg:#070707;--gold:#c59b18;--muted:#d0cfcf}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--muted)}
+.header{display:flex;justify-content:space-between;align-items:center;padding:18px 36px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{color:var(--gold);font-weight:800;letter-spacing:3px;font-size:22px}
+.nav button,.nav a{margin-left:12px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer;text-decoration:none}
+.hero{padding:40px;background:linear-gradient(90deg,rgba(0,0,0,0.4),rgba(0,0,0,0));border-bottom:1px solid rgba(255,255,255,0.02)}
+.hero-inner h1{color:var(--gold);font-size:36px;margin:0}
+.catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:28px;max-width:1200px;margin:0 auto}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.08));padding:12px;border-radius:10px;text-align:center;position:relative}
+.card img{width:100%;height:320px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 6px 0}
+.price{color:var(--gold);font-weight:800}
+.btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:8px;background:var(--gold);color:#000;font-weight:700;text-decoration:none;cursor:pointer}
+.modal{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#0f0f0f;padding:18px;border-radius:10px;max-width:900px;max-height:85vh;overflow:auto;z-index:1000}
+.hidden{display:none}
+.cart-panel{position:fixed;right:0;top:0;width:380px;height:100%;background:#0b0b0b;padding:18px;box-shadow:-6px 0 18px rgba(0,0,0,0.6);overflow:auto;z-index:999}
+.totals div{margin:8px 0}
+.grand{font-weight:900;color:var(--gold)}
+.cart-actions{margin-top:12px}
+input#coupon{width:60%;padding:8px}
+
+
+/* Zara-like premium styles additions */
+.hero{
+  padding:40px; background:linear-gradient(90deg, rgba(0,0,0,0.5), transparent);
+}
+.card .name{font-weight:700;letter-spacing:1px;}
+.card .price{color:#c59b18;font-weight:800;}
+.grid{gap:22px;}
