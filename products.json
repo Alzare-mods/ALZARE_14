@@ -15,21 +15,21 @@
         "size": "S",
         "color": "Negro",
         "price": 350,
-        "stock": 5
+        "stock": 10
       },
       {
         "sku": "P101-BLK-M",
         "size": "M",
         "color": "Negro",
         "price": 350,
-        "stock": 8
+        "stock": 10
       },
       {
         "sku": "P101-WHT-S",
         "size": "S",
         "color": "Blanco",
         "price": 360,
-        "stock": 2
+        "stock": 10
       }
     ],
     "description": "Playera premium 100% algodón.",
@@ -61,14 +61,14 @@
         "size": "S",
         "color": "Negro",
         "price": 580,
-        "stock": 3
+        "stock": 10
       },
       {
         "sku": "S102-RED-M",
         "size": "M",
         "color": "Rojo",
         "price": 580,
-        "stock": 4
+        "stock": 10
       }
     ],
     "description": "Sudadera con capucha, corte moderno.",
