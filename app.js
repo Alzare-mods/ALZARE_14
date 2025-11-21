@@ -110,7 +110,7 @@ function buyNowWhatsVariant(productId){
   const qty = parseInt(document.getElementById('qty').value) || 1;
   const variant = findVariant(p,size,color);
   const price = variant ? variant.price : p.price;
-  const phone = "0000000000"; // REPLACE with your number
+  const phone = "8492568555"; // REPLACE with your number
   const msg = `Hola, quiero comprar: ${p.name} - Talla:${size} - Color:${color} - Cant:${qty} - Precio:${price} USD`;
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`,'_blank');
 }
@@ -156,7 +156,7 @@ document.addEventListener('click', function(e){
     let total = 0;
     cart.forEach(it=>{ msg += `- ${it.name} (${it.size}, ${it.color}) x${it.qty} — $${it.price}%0A`; total += it.price * (it.qty||1); });
     msg += `%0ATotal: $${total.toFixed(2)}`;
-    const phone = "0000000000"; // REPLACE with your phone
+    const phone = "8492568555"; // REPLACE with your phone
     window.open(`https://wa.me/${phone}?text=${msg}`,'_blank');
   }
   if(e.target && e.target.id==='checkoutStripe'){
