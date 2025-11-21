@@ -21,7 +21,7 @@ function renderCatalog(list){
     const div = document.createElement('div');
     div.className = 'card';
     div.innerHTML = `
-      <img src="${p.images[0]||''}" alt="${escapeHtml(p.name)}">
+      div.innerHTML = `<img src="${p.image}"><h3>${p.name}</h3><p class="price">RD$ ${p.price}</p>`;
       <h3>${escapeHtml(p.name)}</h3>
       <div class="price">${p.price.toFixed(2)} USD</div>
       <div><button class="btn" onclick="openProduct(${p.id})">Ver / Comprar</button></div>
@@ -41,7 +41,7 @@ function openProduct(id){
   if(!p) return;
   const modal = document.getElementById('productModal');
   modal.classList.remove('hidden');
-  modal.innerHTML = productModalHTML(p);
+  modal.innerHTML = `... <div class="price">RD$ ${p.price}</div> ...`;
 }
 
 function productModalHTML(p){
